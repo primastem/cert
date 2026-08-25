@@ -4,40 +4,59 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PrimaSTEM — Certificates &amp; Declarations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 <style>
   :root { color-scheme: light; }
-  body { font-family: Arial, Helvetica, sans-serif; color: #111; background: #fff;
-         max-width: 720px; margin: 0 auto; padding: 40px 20px; line-height: 1.5; }
-  header { text-align: center; margin-bottom: 36px; }
-  header img { width: 220px; max-width: 80%; }
-  h1 { font-size: 1.7rem; letter-spacing: .06em; margin: 18px 0 4px; }
-  .sub { color: #555; font-size: .9rem; }
-  h2 { font-size: 1.25rem; border-bottom: 1px solid #ccc; padding-bottom: 4px; margin-top: 34px; }
-  ul { padding-left: 0; list-style: none; }
-  li { margin: 10px 0; }
-  a.doc { font-weight: bold; }
-  .lang { color: #666; font-size: .9rem; }
-  footer { margin-top: 48px; font-size: .85rem; color: #666; border-top: 1px solid #ccc; padding-top: 12px; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #fafafa; color: #303030;
+         font-family: Inter, system-ui, -apple-system, sans-serif; line-height: 1.5; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 56px 64px 0; }
+  .logo { width: 190px; margin-bottom: 40px; }
+  h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 8px; }
+  .sub { font-size: 15px; color: #6b6b6b; margin: 0 0 40px; }
+  h2 { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em;
+       color: #8a8a8a; margin: 0 0 14px; border-bottom: 1px solid #e4e4e4; padding-bottom: 8px; }
+  .docs { display: flex; flex-direction: column; gap: 12px; }
+  .card { display: flex; flex-direction: column; gap: 2px; background: #fff;
+          border: 1px solid #e4e4e4; border-radius: 8px; padding: 16px 20px; }
+  .card a { font-size: 15px; font-weight: 600; color: #5aa02c; text-decoration: none; }
+  .card a:hover { color: #4d8825; text-decoration: underline; }
+  .meta { font-size: 13px; color: #8a8a8a; }
+  footer { max-width: 880px; margin: 56px auto 0; padding: 24px 64px 40px;
+           border-top: 1px solid #e4e4e4; display: flex; flex-direction: column; gap: 4px; }
+  footer span, footer a { font-size: 13px; color: #8a8a8a; }
+  footer a:hover { color: #4d8825; }
+  @media (max-width: 640px) {
+    .wrap { padding: 32px 20px 0; }
+    footer { padding: 20px 20px 32px; }
+    .logo { width: 150px; }
+  }
 </style>
 </head>
 <body>
-<header>
-  <img src="logo.svg" alt="PrimaSTEM">
+<div class="wrap">
+  <img class="logo" src="logo.svg" alt="PrimaSTEM">
   <h1>Certificates &amp; Declarations</h1>
-  <p class="sub">PRIMASTEM SAS · 11 rue de Magdebourg, 75016 Paris, France</p>
-</header>
+  <p class="sub">Official conformity documents issued by PRIMASTEM SAS.</p>
 
-<h2>PrimaSTEM — model PS-2026-001</h2>
-<ul>
-  <li><a class="doc" href="EU-Declaration-of-Conformity-PS-2026-001.pdf">EU Declaration of Conformity</a>
-      <span class="lang">— English (No. DoC-PS-2026-001-01)</span></li>
-  <li><a class="doc" href="EU-Declaration-of-Conformity-PS-2026-001-FR.pdf">Déclaration UE de conformité</a>
-      <span class="lang">— français (n° DoC-PS-2026-001-01)</span></li>
-</ul>
+  <h2>PrimaSTEM — model PS-2026-001</h2>
+  <div class="docs">
+    <div class="card">
+      <a href="EU-Declaration-of-Conformity-PS-2026-001.pdf">EU Declaration of Conformity</a>
+      <span class="meta">English · No. DoC-PS-2026-001-01 · PDF</span>
+    </div>
+    <div class="card">
+      <a href="EU-Declaration-of-Conformity-PS-2026-001-FR.pdf">Déclaration UE de conformité</a>
+      <span class="meta">Français · n° DoC-PS-2026-001-01 · PDF</span>
+    </div>
+  </div>
+</div>
 
 <footer>
-  PRIMASTEM SAS · SIREN 944 985 720 · info@primastem.com ·
-  <a href="https://primastem.com">primastem.com</a>
+  <span>PRIMASTEM SAS · 11 rue de Magdebourg, 75016 Paris, France</span>
+  <span>SIREN 944 985 720 · <a href="mailto:info@primastem.com">info@primastem.com</a> · <a href="https://primastem.com">primastem.com</a></span>
 </footer>
 </body>
 </html>
